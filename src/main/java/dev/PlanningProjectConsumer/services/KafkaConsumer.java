@@ -17,7 +17,8 @@ public class KafkaConsumer {
     @KafkaListener(topics = "user_actions", groupId = "consumers")
     public void listen(String message) throws Exception {
         log.info("Message:  " + message);
-        log.info("saved log: " + logService.saveLog(message));
+        LogEntity savedLog = logService.saveLog(message);
+        log.info("saved log: " + savedLog);
     }
 
 }

@@ -4,11 +4,12 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum EntityClass {
-
-    GroupEntity,
+    GroupDto,
     UserEntity,
-    TaskEntity,
-    PurchaseEntity;
-
-
+    TaskDto,
+    PurchaseDto,
+    CredentialsEntity,
+    SignInRequest,
+    GroupId,
+    TaskId;
 }

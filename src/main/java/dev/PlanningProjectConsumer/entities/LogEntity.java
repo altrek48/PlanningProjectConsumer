@@ -46,4 +46,5 @@ public class LogEntity {
 
     private String serviceName;
 
+    private String exception;
 }
